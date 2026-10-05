@@ -7,11 +7,12 @@ import PadreDeportes from './Components/PadreDeportes';
 import DibujosComplejosRender from './Components/DibujosComplejosRender';
 import reportWebVitals from './reportWebVitals';
 import PadreNumeros from './Components/PadreNumeros';
+import Comics from './Components/Comics';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <PadreNumeros/>
+      <Comics/>
   </React.StrictMode>
 );
 

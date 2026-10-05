@@ -22,7 +22,7 @@ class PadreNumeros extends Component {
 
     sumar = (numero) => {
         this.setState({
-            suma: this.state.suma + parseInt(numero)
+            suma: this.state.suma + parseInt(numero)  
         });
 
     }
@@ -30,6 +30,12 @@ class PadreNumeros extends Component {
     render() {
         return (
             <div>
+                {
+                    this.valor == 0 ?
+                            (<h1>ES 0 </h1>):
+                            (<h1>ES 0 </h1>)
+
+                }
                 <h1>Padre Numeros</h1>
                 <h2>La suma de los numeros es: {this.state.suma} </h2>
 
