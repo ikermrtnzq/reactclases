@@ -10,7 +10,6 @@ class Contador extends Component {
             modelo: "Q8" 
         } 
     }
-
     //Ya no necesitams poner ni let ni var
     numero = 1;
 
@@ -24,16 +23,33 @@ class Contador extends Component {
         this.setState( {velocidad: 200} ) 
     }
 
+    //Para declarar variables STATE
+    state = { 
+        valor : parseInt(this.props.inicio)
+    }
+
+    //Para modificar valor de una variable STATE
+    incrementarValor = () => {
+        //ARRAYS
+        var titulos=[];
+        titulos.push(<h1>Titulo 1</h1>)
+        titulos.push(<h1>Titulo 2</h1>)
+        this.setState({
+            valor: this.state.valor + 1
+        })
+
+    }
+
     //La sintaxix para llamar a los metodos cambia
     render(){
         return(
             <div>
                 <h1>CONTADOR JSX</h1>
                 <p>{this.numero}</p>
-                /** Para acceder a variables STATE*/
-                {this.state.velocidad} 
-                {this.state.coche.marca} 
                 <button onClick={this.incremento}
+                >Incrementar</button>
+                <p>{this.state.valor}</p>
+                <button onClick={this.incrementarValor}
                 >Incrementar</button>
             </div>
         )
