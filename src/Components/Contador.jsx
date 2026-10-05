@@ -10,6 +10,7 @@ class Contador extends Component {
             modelo: "Q8" 
         } 
     }
+
     //Ya no necesitams poner ni let ni var
     numero = 1;
 
@@ -19,6 +20,8 @@ class Contador extends Component {
         //Para acceder a cualquier elemento de la clase usamos this
         this.numero += 1;
         console.log(this.numero)
+        //Para cambiar el valor de una variable STATE
+        this.setState( {velocidad: 200} ) 
     }
 
     //La sintaxix para llamar a los metodos cambia
