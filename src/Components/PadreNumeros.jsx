@@ -31,9 +31,9 @@ class PadreNumeros extends Component {
         return (
             <div>
                 {
-                    this.valor == 0 ?
-                            (<h1>ES 0 </h1>):
-                            (<h1>ES 0 </h1>)
+                    //LOS CONDICIONALES SE ESCRIBEN COMO TERNARIOS!!!
+                    this.valor == 0 ? <h1>ES 0 </h1>:
+                    this.valor >= 0 ? <h1>ES mayor a 0 </h1>: <h1>ES negativa </h1>
 
                 }
                 <h1>Padre Numeros</h1>
