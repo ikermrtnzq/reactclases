@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Contador from './Components/Contador';
+import DibujosComplejosArrays from './Components/DibujosComplejosArrays';
+import PadreDeportes from './Components/PadreDeportes';
+import DibujosComplejosRender from './Components/DibujosComplejosRender';
 import reportWebVitals from './reportWebVitals';
+import PadreNumeros from './Components/PadreNumeros';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contador />
+      <PadreNumeros/>
   </React.StrictMode>
 );
 
